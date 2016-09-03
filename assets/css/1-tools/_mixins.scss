@@ -1,0 +1,19 @@
+// Mixins Files
+
+// Transition Mixin
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+// Hover Mixin
+
+@mixin hover($color, $transition) {
+  &:hover {
+    color: $color;
+    @include transition($transition);
+  }
+}
