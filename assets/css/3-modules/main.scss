@@ -1,0 +1,42 @@
+#shop {
+  @include outer-container();
+  padding-top: 10px;
+
+  aside {
+    @include span-columns(3);
+  }
+
+  main {
+    @include span-columns(9);
+
+    header {
+      @include fill-parent();
+      display: block;
+      background-color: white;
+      height: 20px;
+
+      span {
+        float: right;
+        margin-right: 20px;
+      }
+
+      p {
+        display: inline;
+      }
+
+      select {
+        display: inline-block;
+      }
+    }
+
+    .product {
+      width: 30%;
+      margin-right: 1.5%;
+      margin-left: 1.5%;
+      float: left;
+      margin-bottom: 25px;
+      margin-top: 10px;
+      height: 340px;
+    }
+  }
+}
